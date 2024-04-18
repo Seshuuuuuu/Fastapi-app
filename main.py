@@ -27,7 +27,7 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 
 templates = Jinja2Templates(directory="templates")
 
-os.environ["OPENAI_API_KEY"] = "sk-proj-XaUbVkKxKnQdycbk7XxkT3BlbkFJdDrhIk7MnrAXJynmLGIB"
+os.environ["OPENAI_API_KEY"] = "sk-proj-XaUbVkKxKnQdycbk7XxkT3BlbkFJdDrhIk7MnrAXJynmLGIB:"
 
 # Set file path
 # file_path = 'SDG.pdf'
@@ -78,7 +78,7 @@ def llm_pipeline(file_path):
 
     document_ques_gen, document_answer_gen = file_processing(file_path)
 
-    llm_ques_gen_pipeline = ChatOpenAI(openai_api_key="sk-proj-XaUbVkKxKnQdycbk7XxkT3BlbkFJdDrhIk7MnrAXJynmLGIB")
+    llm_ques_gen_pipeline = ChatOpenAI(openai_api_key="sk-proj-XaUbVkKxKnQdycbk7XxkT3BlbkFJdDrhIk7MnrAXJynmLGIB:")
 
 
     prompt_template = """
