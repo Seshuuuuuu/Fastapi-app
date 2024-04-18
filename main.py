@@ -78,10 +78,7 @@ def llm_pipeline(file_path):
 
     document_ques_gen, document_answer_gen = file_processing(file_path)
 
-    llm_ques_gen_pipeline = ChatOpenAI(
-        temperature = 0.3,
-        model = "gpt-3.5-turbo"
-    )
+    llm_ques_gen_pipeline = ChatOpenAI(temperature = 0.3,model = "gpt-3.5-turbo")
 
     prompt_template = """
     You are an expert at creating questions based on coding materials and documentation.
