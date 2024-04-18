@@ -1,1 +1,10 @@
-fastapi[all]
+langchain
+openai
+pypdf
+tiktoken
+aiofiles
+fastapi
+uvicorn
+jinja2
+python-multipart
+PyPDF2
